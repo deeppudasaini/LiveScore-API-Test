@@ -13,7 +13,7 @@ def index(request):
 
     variables={
         'response':response,
-        'country':response.objects.all()
+        # 'country':response.objects.all()
     }
     return render(request,'index.html',variables)
     # return HttpResponse(response)   

@@ -11,14 +11,18 @@
     </tr>
   </thead>
   <tbody>
-  
+  <td>{% for r in response %}
     <tr>
       
-      <td>{% for r in response %}r.Stage{% endfor %}</td>
+      
+      {{r.Stages.Cnm}}
+      
       <td>Otto</td>
       <td>@mdo</td>
     </tr>
-   {% endfor %}
+    {% endfor %}</td>
+     
+   
   </tbody>
 </table>
 {% endblock main %}
